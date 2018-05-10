@@ -16,5 +16,9 @@ namespace Aula1005_POO
         {
 
         }
+        public Cliente(string nome, string cpf) : base(nome,cpf)
+        {
+                
+        }
     }
 }
