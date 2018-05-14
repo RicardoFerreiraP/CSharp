@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace Aula1405_Interfaces
 {
-    class Carro : IMeioTransporte
+    class Onibus : IMeioTransporte
     {
         public int Velocidade { get; set; }
 
-        public Carro()
+        public Onibus()
         {
             Velocidade = 0;
         }
 
         public void Acelerar()
         {
-            Velocidade += 10;
+            Velocidade += 7;   
         }
 
         public void Desacelerar()
         {
-            Velocidade -= 5;
+            Velocidade -= 4;
         }
     }
 }
