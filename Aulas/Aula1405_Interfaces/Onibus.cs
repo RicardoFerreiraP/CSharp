@@ -24,5 +24,10 @@ namespace Aula1405_Interfaces
         {
             Velocidade -= 4;
         }
+
+        public string ImprimirInfo()
+        {
+            return "Ônibus, velocidade atual: " + Velocidade;
+        }
     }
 }

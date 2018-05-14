@@ -24,5 +24,10 @@ namespace Aula1405_Interfaces
         {
             Velocidade -= 5;
         }
+        
+        public string ImprimirInfo()
+        {
+            return "Carro, velocidade atual: " + Velocidade;
+        }
     }
 }
