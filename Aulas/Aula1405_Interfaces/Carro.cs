@@ -18,6 +18,8 @@ namespace Aula1405_Interfaces
         //Propriedade de navegação
         public virtual Marca _Marca { get; set; }
 
+        public List<Roda> Rodas { get; set; }
+
         public Carro()
         {
             Velocidade = 0;
