@@ -33,4 +33,10 @@ namespace Aula1005_POO
             cpf = cpf;
         }
     }
+    //ponto
+    public abstract string ImprimirInfo();
+        {
+
+        }
+    }
 }

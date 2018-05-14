@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula1005_POO", "Aula1005\Aula1005_POO.csproj", "{89AD3542-A70E-41A9-B182-AB9E68D6BCC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula1405_Interfaces", "Aula1405_Interfaces\Aula1405_Interfaces.csproj", "{1EBEEC55-61DF-416F-B8ED-B211E35AA497}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{89AD3542-A70E-41A9-B182-AB9E68D6BCC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89AD3542-A70E-41A9-B182-AB9E68D6BCC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89AD3542-A70E-41A9-B182-AB9E68D6BCC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EBEEC55-61DF-416F-B8ED-B211E35AA497}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EBEEC55-61DF-416F-B8ED-B211E35AA497}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EBEEC55-61DF-416F-B8ED-B211E35AA497}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EBEEC55-61DF-416F-B8ED-B211E35AA497}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75EEB08B-648D-4626-92DA-F06129124FF5}
 	EndGlobalSection
 EndGlobal
