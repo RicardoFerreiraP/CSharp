@@ -25,7 +25,16 @@ namespace Aula1705_Camadas.Views
             return opcao;
         }
 
-        
+        public void CriarAtividade()
+        {
+            Atividade atividade = new Atividade();
+            Console.Write("Digite o nome da atividade: ");
+            atividade.Nome = Console.ReadLine();
+            atividade.Ativo = true;
+
+            AtividadesController atividadeCtrl = new AtividadesController();
+            atividadeCtrl.Salvar(atividade);
+        }
 
     }
 }
