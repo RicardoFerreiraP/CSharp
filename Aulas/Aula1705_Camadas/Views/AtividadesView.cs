@@ -12,13 +12,14 @@ namespace Aula1705_Camadas.Views
     {
         private AtividadesController atividadeController;
 
-        enum MinhasOpcoes
+        enum OpcoesMenu
         {
             CriarAtividade = 1,
             ListarAtividades = 2,
             BuscarAtividades = 3,
             EditarAtividade = 4,
-            ExcluirAtividade = 5
+            ExcluirAtividade = 5,
+            Sair
         }
 
         public AtividadesView()
@@ -28,7 +29,7 @@ namespace Aula1705_Camadas.Views
 
         public void ExibirMenu()
         {
-            int opcao = 9;
+            OpcoesMenu opcao = OpcoesMenu.Sair;
             do
             {
                 Console.Clear();
@@ -42,37 +43,41 @@ namespace Aula1705_Camadas.Views
                 Console.WriteLine("=         9 - Sair                     =");
                 Console.WriteLine("========================================");
 
-                opcao = int.Parse(Console.ReadLine());
+                opcao = (OpcoesMenu)int.Parse(Console.ReadLine());
 
                 switch (opcao)
                 {
-                    case 1:
+                    case OpcoesMenu.CriarAtividade:
                         CriarAtividade();
                         break;
 
-                    case 2:
+                    case OpcoesMenu.ListarAtividades:
                         ListarAtividades();
                         break;
 
-                    case 3:
+                    case OpcoesMenu.BuscarAtividades:
                         BuscarAtividade();
                         break;
 
-                    case 4:
+                    case OpcoesMenu.EditarAtividade:
                         EditarAtividade();
                         break;
 
-                    case 5:
-                        ExcluirAtividade();
+                    case OpcoesMenu.ExcluirAtividade:
+                        EditarAtividade();
+                        break;
+
+                    case OpcoesMenu.Sair:
                         break;
 
                     default:
+                        Console.WriteLine("Opção inválida! Aperte quaquer tecla para continuar!");
+                        Console.ReadKey();
                         break;
-                }
+                }               
             }
 
-            while (opcao != 9);
-
+            while (opcao != OpcoesMenu.Sair);
         }
 
         public void CriarAtividade()
