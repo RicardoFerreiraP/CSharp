@@ -49,23 +49,10 @@ namespace Aula1705_Camadas.Controllers
             List<Atividade> atividadesSelecionadas = new List<Atividade>();
             foreach (Atividade a in ListaAtividades)
             {
-                if (a.Nome == nome)
+                if (a.Nome.Contains(nome))
                     atividadesSelecionadas.Add(a);
             }
             return atividadesSelecionadas;
-        }
-
-        //BuscarInativo
-        public Atividade BuscarInativo(string opc)
-        {
-            foreach (Atividade a in ListaAtividades)
-            {
-                if (a.Ativo == false)
-                {
-                    return a;
-                }
-            }
-            return null;
         }
 
         //Editar

@@ -76,7 +76,7 @@ namespace Aula1705_Camadas.Views
                         break;
 
                     case OpcoesMenu.ListarAtividadesAtivoInativo:
-                        BuscarPorStatus();
+                        //BuscarPorStatus();
                         break;
 
                     case OpcoesMenu.Sair:
