@@ -43,6 +43,31 @@ namespace Aula1705_Camadas.Controllers
             return null;
         }
 
+        //BuscarPorNome
+        public List<Atividade> BuscarPorNome(string nome)
+        {
+            List<Atividade> atividadesSelecionadas = new List<Atividade>();
+            foreach (Atividade a in ListaAtividades)
+            {
+                if (a.Nome == nome)
+                    atividadesSelecionadas.Add(a);
+            }
+            return atividadesSelecionadas;
+        }
+
+        //BuscarInativo
+        public Atividade BuscarInativo(string opc)
+        {
+            foreach (Atividade a in ListaAtividades)
+            {
+                if (a.Ativo == false)
+                {
+                    return a;
+                }
+            }
+            return null;
+        }
+
         //Editar
         public void Editar(int id, Atividade atividadeAtualizada)
         {
