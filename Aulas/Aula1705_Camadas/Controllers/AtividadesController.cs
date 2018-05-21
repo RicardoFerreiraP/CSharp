@@ -55,6 +55,26 @@ namespace Aula1705_Camadas.Controllers
             return atividadesSelecionadas;
         }
 
+        //BuscarPorNomeLinq
+        /*public List<Atividade> BuscarPorNome(string nome)
+        * {
+                IEnumerable<Atividade> atividadesSelecionadas = new List<Atividade>();
+                
+                atividadesSelecionadas = from x in ListaAtividades where x.Nome.ToLower().Contains(nome.ToLower()) select x;
+
+                return atividadesSelecionadas.ToList();
+          }
+         */
+
+        //BuscarAtivoInativo
+        public List<Atividade> BuscarAtivoInativo(bool ativo)
+        {
+            IEnumerable<Atividade> atividadesSelecionadas = new List<Atividade>();
+                atividadesSelecionadas = from x in ListaAtividades where x.Ativo = ativo select x;
+
+            return atividadesSelecionadas.ToList();
+        }
+
         //Editar
         public void Editar(int id, Atividade atividadeAtualizada)
         {
