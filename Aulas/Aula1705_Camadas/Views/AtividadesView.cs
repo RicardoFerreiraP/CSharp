@@ -10,6 +10,22 @@ namespace Aula1705_Camadas.Views
 {
     class AtividadesView
     {
+        private AtividadesController atividadeController;
+
+        enum MinhasOpcoes
+        {
+            CriarAtividade = 1,
+            ListarAtividades = 2,
+            BuscarAtividades = 3,
+            EditarAtividade = 4,
+            ExcluirAtividade = 5
+        }
+
+        public AtividadesView()
+        {
+            atividadeController = new AtividadesController();
+        }
+
         public void ExibirMenu()
         {
             int opcao = 9;
