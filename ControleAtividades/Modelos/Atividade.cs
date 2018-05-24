@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Modelos
+﻿namespace Modelos
 {
     public class Atividade
     {
