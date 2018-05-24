@@ -68,7 +68,7 @@ namespace Aula1705_Camadas.Views
                         break;
 
                     case OpcoesMenu.ExcluirAtividade:
-                        EditarAtividade();
+                        ExcluirAtividade();
                         break;
 
                     case OpcoesMenu.BuscarAtividadePorNome:
@@ -175,7 +175,7 @@ namespace Aula1705_Camadas.Views
         private void BuscarAtividade()
         {
             //AtividadesController atividadeController = new AtividadesController();
-            Console.WriteLine("Digite o ID da atividade: ");
+            Console.Write("Digite o ID da atividade: ");
             int id = int.Parse(Console.ReadLine());
 
             Atividade atividade = atividadeController.BuscarPorID(id);
@@ -207,7 +207,7 @@ namespace Aula1705_Camadas.Views
         private void ExcluirAtividade()
         {
             ListarAtividades();
-            Console.WriteLine("Digite o ID da atividade que deseja excluir: ");
+            Console.Write("Digite o ID da atividade que deseja excluir: ");
             int id = int.Parse(Console.ReadLine());
 
             //AtividadesController atividadeController = new AtividadesController();

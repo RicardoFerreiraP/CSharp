@@ -17,10 +17,12 @@ namespace Aula1705_Camadas.Controllers
             ListaAtividades = new List<Atividade>();
         }
 
+        private static int ultimoIdUtilizado = 1;
+
         //Salvar
         public void Salvar(Atividade atividade)
         {
-            atividade.AtividadeID = ListaAtividades.Count + 1;
+            atividade.AtividadeID = ultimoIdUtilizado++;
             ListaAtividades.Add(atividade);
         }
 
