@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Controllers
 {
-    public class UsuariosController : IBaseController<Usuario>
+    public class UsuariosController
     {
         private static List<Usuario> listaUsuarios { get; set; } = new List<Usuario>();
 

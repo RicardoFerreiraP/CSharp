@@ -50,6 +50,7 @@
     <Compile Include="AtividadesController.cs" />
     <Compile Include="Base\IBaseController.cs" />
     <Compile Include="CategoriasController.cs" />
+    <Compile Include="DAL\Contexto.cs" />
     <Compile Include="UsuariosController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -61,7 +62,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
