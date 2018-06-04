@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Controllers.Base
 {
-    interface IBaseController<T> where T : class
+    public interface IBaseController<T> where T : class
     {
         void Adicionar(T entity);
         IList<T> ListarTodos();
